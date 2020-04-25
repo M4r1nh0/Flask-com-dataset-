@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flask</title>
+		<style type="text/css">
+			body{
+				background: #E6E6E6;
+				font-size: 16px;
+			}
+			h1{
+			    font-size: 2em;
+			    text-align: center;
+			    padding: 10px;
+			}
+			p{
+			    font-size: 0.9em;
+			    padding: 20px;
+			    text-align: center;
+			}
+			a{
+			    text-decoration: none;
+			    Color: #554F4F;
+			}
+			a:hover{
+			    color: #fff;
+			    background: black;
+			}
+			div{
+			    width: 200px;
+			    margin: 0px auto;
+			}
+		</style>
+	</head>
+	<body>
+	    <div>
+    		<h1>Formulario da sessão</h1>
+    		<hr>
+            <form action="{{ url_for('validacao_sessao') }}" method="Post">
+                Nome:<input type="text" name="usuario"><br>
+                <input type="submit" value="Enviar">
+            </form>
+    	</div>
+	</body>
+</html>
